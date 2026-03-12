@@ -1,0 +1,26 @@
+{
+  "Scenario Basico Gherkin": {
+    "scope": "gherkin",
+    "prefix": "scenario",
+    "body": [
+      "Scenario: ${1:Descripción del escenario}",
+      "  Given ${2:contexto inicial}",
+      "  When ${3:acción}",
+      "  Then ${4:resultado esperado}"
+    ],
+    "description": "Plantilla básica de Scenario en Gherkin"
+  },
+
+  "Feature Basica Gherkin": {
+    "scope": "gherkin",
+    "prefix": "feature",
+    "body": [
+      "Feature: ${1:Nombre de la funcionalidad}",
+      "",
+      "  Como ${2:tipo de usuario}",
+      "  Quiero ${3:objetivo}",
+      "  Para ${4:beneficio}"
+    ],
+    "description": "Plantilla básica de Feature en Gherkin"
+  }
+}
