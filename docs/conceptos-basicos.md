@@ -13,6 +13,12 @@
     -[Scenario Buenas Practicas](#scenario-buenas-practicas)
     -[Background Buenas Practicas](#background-buenas-practicas)
     -[Scenario Outline Buenas Practicas](#scenario-outline-buenas-practicas)
+- [Estructura gherkin](#estructura-gherkin)
+    -[Given](#given)
+    -[When](#when)
+    -[Then](#then)
+    -[And](#and)
+    -[But](#but)
 
 ## ¿Qué es BDD?
 [Bdd significa Desarrollo impulsado por el comportamiento y se centra en describir el comportamiento del sistema]
@@ -39,6 +45,11 @@
 
 ### Feature Buenas Practicas
 [El nombre del feature responde ¿Qué funcionalidad es la que voy probar? De tal manera que sea entendible para cualquier involucrado, es importante no usar un lenguaje tecnico sino ser lo más especifico y sencillo posible. 
+
+Nota: Siempre especificar cual es el porque de tu funcionalidad , ya que permite profundizar en lo que se va a probar
+
+
+
 Ejemplo correcto: Transferencias Bancarias
 Ejemplo incorrecto: API de Transferencias]
 
@@ -62,3 +73,10 @@ Background:
 
 ### Scenario Outline Buenas Practicas
 [Se utiliza solo si la logica es identica, y el escenario aplica para varios ejemplos, máximo 5 ejemplos para escenarios de este tipo, más de 5 nos dice que quizás debemos de dividir los escenarios ]
+
+## Estructura Gherkin
+### Given 
+### When
+### Then
+### And
+### But
