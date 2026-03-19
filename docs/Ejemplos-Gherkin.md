@@ -34,32 +34,32 @@
   Quiero registrar los medios electrónicos del usuario
   Para poder notificarle información relevante
 
-Incorrecto:
+-Incorrecto:
   Feature: Verificación de OTP
   Como Banco
   Quiero confirmar la otp 
   Para poder confirmar el número de celular
 
-Recomendaciones:
+-Recomendaciones:
   Omitir repetición de “confirmar”
 
-Correcto:
+-Correcto:
 
 Feature: Verificación de OTP
   Como Banco
   Quiero validar el código OTP enviado al usuario
   Para confirmar su número de celular
 
-Incorrecto:
+-Incorrecto:
   Feature: Registro de Datos
   Como Banco
   Quiero Registrar el domicilio del usuario
   Para Conocer su dirección
 
-Recomendaciones:
+-Recomendaciones:
   “Registro de Datos” es demasiado genérico
 
-Correcto: 
+-Correcto: 
   Feature: Registro de domicilio del usuario
   Como Banco
   Quiero registrar el domicilio del usuario
