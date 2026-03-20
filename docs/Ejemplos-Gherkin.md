@@ -1,5 +1,6 @@
 ## Tabla de contenidos
 - [Ejemplo future](#ejemplo-future)
+- [Ejemplo scenario](#ejemplo-scenario)
 
 ## Ejemplo future
 
@@ -75,3 +76,40 @@
   Como Banco
   Quiero registrar el domicilio del usuario
   Para conocer su dirección fiscal y de contacto
+
+-Recomendaciones:
+  
+  “Registro de Datos” es demasiado genérico
+
+-Correcto: 
+
+  Feature: Registro de domicilio del usuario
+  Como Banco
+  Quiero registrar el domicilio del usuario
+  Para conocer su dirección fiscal y de contacto
+
+  Correcto:
+
+  Feature: Evaluación economica del cliente
+  Como Banco
+  Quiero evaluar al usuario economicamente
+  Para saber si es apto para una tarjeta de debído
+
+## Ejemplo scenario
+
+Un escenario responde a un ¿Qué pasa si?
+  
+  Feature: Inicio de registro de usuario mediante CURP
+  Scenario: Inicio de registro de usuario con CURP extranjera válida
+
+  Feature: Registro de número celular
+  Scenario: Registro de número celular con lada internacional rechazado
+ 
+  Feature: Verificación de OTP
+  Scenario:  Verificación de OTP fallida por omisión de ingreso
+
+  Feature: Registro de domicilio del usuario
+  Scenario: Registro de domicilio rechazado por código postal con formato inválido
+
+  Feature: Evaluación economica de clientes
+  Scenario: Rechazo de evaluación económica para cliente con perfil estudiante
