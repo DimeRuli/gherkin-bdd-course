@@ -100,16 +100,21 @@
 Un escenario responde a un ¿Qué pasa si?
   
   Feature: Inicio de registro de usuario mediante CURP
+  
   Scenario: Inicio de registro de usuario con CURP extranjera válida
 
   Feature: Registro de número celular
+  
   Scenario: Registro de número celular con lada internacional rechazado
  
   Feature: Verificación de OTP
+  
   Scenario:  Verificación de OTP fallida por omisión de ingreso
 
   Feature: Registro de domicilio del usuario
+  
   Scenario: Registro de domicilio rechazado por código postal con formato inválido
 
   Feature: Evaluación economica de clientes
+
   Scenario: Rechazo de evaluación económica para cliente con perfil estudiante
