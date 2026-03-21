@@ -21,40 +21,69 @@
     -[But](#but)
 
 ## ¿Qué es BDD?
-[Bdd significa Desarrollo impulsado por el comportamiento y se centra en describir el comportamiento del sistema]
-[Bdd realiza las preguntas ¿Qué hace el sistema? y ¿Por qué lo hace el sistema?, como lo indica su metodología se centra en el comportamiento y esas son las preguntas principales de la metodología
+Bdd significa Desarrollo impulsado por el comportamiento y se centra en describir el comportamiento del sistema
+
+Bdd realiza las preguntas ¿Qué hace el sistema? y ¿Por qué lo hace el sistema?, como lo indica su metodología se centra en el comportamiento y esas son las preguntas principales de la metodología
 
 ## ¿Qué es Gherkin?
-[Es el nombre del lenguaje que se utiliza para describir el comportamiento y tiene sus propias reglas]
+Es el nombre del lenguaje que se utiliza para describir el comportamiento y tiene sus propias reglas
 
 ## Elementos Principales
 
 ### Feature
-[Representa la funcionalidad del sistema, puede ser escrito desde la perspectiva del usuario o del negocio], define ¿Qué hace el sistema?, no como se implementa
+Representa la funcionalidad del sistema, puede ser escrito desde la perspectiva del usuario o del negocio, define ¿Qué hace el sistema?, no como se implementa
 
 ### Scenario
-[Describe una caso concreto de comportamiento. Un ejemplo especifico de como debe de funcionar la feature, cada escenario debe de ser independiente]
+Describe una caso concreto de comportamiento. Un ejemplo especifico de como debe de funcionar la feature, cada escenario debe de ser independiente
 
 ### Background
-[Se utiliza para definir el contexto inicial, evitando repetir pasos en cada escenario, reutilizando de forma clara y sencilla el Given y el And, si mayor o igual de 3 escenarios ocupan los mismo pasos implementarlo , evitarlo si es en menos de 3 escenarios]
+Se utiliza para definir el contexto inicial, evitando repetir pasos en cada escenario, reutilizando de forma clara y sencilla el Given y el And, si mayor o igual de 3 escenarios ocupan los mismo pasos implementarlo , evitarlo si es en menos de 3 escenarios
 
 ### Scenario Outline
-[Se utiliza cuando el comportamiento de la funcionalidad no cambia, y un mismo escenario puede ser probado de multiples maneras y podemos hacer uso de una tabla llamada examples. En dicha tabla colocaremos las variables y si dichas variables son validas o invalidas segun las pruebas]
+Se utiliza cuando el comportamiento de la funcionalidad no cambia, y un mismo escenario puede ser probado de multiples maneras y podemos hacer uso de una tabla llamada examples. En dicha tabla colocaremos las variables y si dichas variables son validas o invalidas segun las pruebas
 
 ## Buenas Practicas Elementos principales
 
 ### Feature Buenas Practicas
-[El nombre del feature responde ¿Qué funcionalidad es la que voy probar? De tal manera que sea entendible para cualquier involucrado, es importante no usar un lenguaje tecnico sino ser lo más especifico y sencillo posible. 
+El nombre del feature responde ¿Qué funcionalidad es la que voy probar? De tal manera que sea entendible para cualquier involucrado, es importante no usar un lenguaje tecnico sino ser lo más especifico y sencillo posible. 
 
 Nota: Siempre especificar cual es el porque de tu funcionalidad , ya que permite profundizar en lo que se va a probar
 
 Ejemplo correcto: Transferencias Bancarias
-Ejemplo incorrecto: API de Transferencias]
+
+Ejemplo incorrecto: API de Transferencias
 
 ### Scenario Buenas Practicas
-[Describe que comportamiento de mi funcionalidad voy a probar, debe leerse como una historia corta
-Ejemplo correcto: Transferencia exitosa entre cuentas propias
-Ejemplo incorrecto: Transferencia]
+Describe que comportamiento de mi funcionalidad voy a probar (Un escenario de prueba), debe leerse como una historia corta
+
+Un Scenario responde principalmente a: 
+
+¿Qué comportamiento ocurre en una situación concreta? Muchas veces ese comportamiento:
+
+1. Lo realiza un usuario u otro tipo de usuario
+
+  -Scenario: Usuario visualiza un mensaje de confirmación al agregar un producto
+  -Scenario: Administrador aprueba la solicitud de vacaciones
+  
+Mismo escenario pero sin quien realiza la acción 
+
+  -Scenario: Usuario visualiza el saldo de su cuenta
+
+  -Scenario: Se muestra el saldo con formato monetario correcto
+
+2. Lo ejecuta el sistema
+
+  -Scenario: El sistema rechaza la operación cuando la cuenta está bloqueada
+
+  -Scenario: Se muestra un error cuando el saldo es insuficiente
+
+  -Scenario: Se calcula correctamente el total del carrito
+
+Mismo escenario pero sin quien realiza la acción
+
+  -Scenario: Usuario visualiza el saldo con formato correcto
+
+  -Scenario: Se muestra el saldo con formato correcto al consultar la cuenta
 
 ### Background Buenas Practicas
 [Usarlo solo si se repite 3 o más de 3 escenarios ocupan los mismo pasos, en ese caso implementarlo , evitarlo si es en menos de 3 escenarios, y estos deben de ser cortos y sencillos, debe de describir un estado no acciones del usuario
