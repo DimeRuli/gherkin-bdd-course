@@ -63,6 +63,7 @@ Un Scenario responde principalmente a:
 1. Lo realiza un usuario u otro tipo de usuario
 
   -Scenario: Usuario visualiza un mensaje de confirmación al agregar un producto
+  
   -Scenario: Administrador aprueba la solicitud de vacaciones
   
 Mismo escenario pero sin quien realiza la acción 
