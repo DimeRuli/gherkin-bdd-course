@@ -48,8 +48,6 @@
 
 Nota: Siempre especificar cual es el porque de tu funcionalidad , ya que permite profundizar en lo que se va a probar
 
-
-
 Ejemplo correcto: Transferencias Bancarias
 Ejemplo incorrecto: API de Transferencias]
 
