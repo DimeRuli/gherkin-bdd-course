@@ -97,7 +97,35 @@
 
 ## Ejemplo scenario
 
-Un escenario responde a un ¿Qué pasa si?
+Un Scenario responde principalmente a: ¿Qué comportamiento ocurre en una situación concreta? Muchas veces ese comportamiento:
+
+Lo realiza un usuario u otro tipo de usuario
+
+  Scenario: Usuario visualiza un mensaje de confirmación al agregar un producto
+
+  Scenario: Administrador aprueba la solicitud de vacaciones
+  
+  Mismo escenario pero sin quien realiza la acción 
+
+  Scenario: Usuario visualiza el saldo de su cuenta
+
+  Scenario: Se muestra el saldo con formato monetario correcto
+
+Lo ejecuta el sistema
+
+  Scenario: El sistema rechaza la operación cuando la cuenta está bloqueada
+
+  Scenario: Se muestra un error cuando el saldo es insuficiente
+
+  Scenario: Se calcula correctamente el total del carrito
+
+  Mismo escenario pero sin quien realiza la acción
+
+  Scenario: Usuario visualiza el saldo con formato correcto
+
+  Scenario: Se muestra el saldo con formato correcto al consultar la cuenta
+
+  Ejemplos: 
   
   Feature: Inicio de registro de usuario mediante CURP
   
@@ -118,3 +146,4 @@ Un escenario responde a un ¿Qué pasa si?
   Feature: Evaluación economica de clientes
 
   Scenario: Rechazo de evaluación económica para cliente con perfil estudiante
+  
