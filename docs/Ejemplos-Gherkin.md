@@ -1,7 +1,8 @@
 ## Tabla de contenidos
 - [Ejemplo future](#ejemplo-future)
 - [Ejemplo scenario](#ejemplo-scenario)
-
+- [Ejemplo given when then](#ejemplo-given-when-then)
+- [Ejemplo And](#ejemplo-and)
 ## Ejemplo future
 
 -Incorrecto:
@@ -118,4 +119,33 @@
   Feature: Evaluación economica de clientes
 
   Scenario: Rechazo de evaluación económica para cliente con perfil estudiante
+
+  ## Ejemplo Given When Then
+  Feature: Busqueda de articulos
+  Scenario: Busqueda exitosa de un articulo
+  Given: El usuario se encuentra en la página de busqueda
+  When: El usuario ingresa el nombre de un articulo y realiza la busqueda
+  Then: El sistema muestra el articulo exitosamente
+
+ ## Ejemplo And
+ 
+
+## Ejemplo Extenso
+
+
+Scenario Outline: Búsqueda exitosa por nombre
+  Given existe un artículo llamado "<articulo>" en el catálogo
+  And el usuario está en la página de búsqueda
+  When el usuario ingresa "<articulo>" en el campo de búsqueda
+  And presiona el botón "Buscar"
+  Then el sistema muestra "<articulo>" en la lista de resultados
+
+Examples:
+  | articulo           |
+  | Teclado mecánico   |
+  | Mouse inalámbrico  |
+  | Monitor 27"        |
+``
+
+
   

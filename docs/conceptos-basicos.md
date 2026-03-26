@@ -100,11 +100,15 @@ Background:
 
 
 ### Scenario Outline Buenas Practicas
-[Se utiliza solo si la logica es identica, y el escenario aplica para varios ejemplos, máximo 5 ejemplos para escenarios de este tipo, más de 5 nos dice que quizás debemos de dividir los escenarios ]
+Se utiliza solo si la logica es identica, y el escenario aplica para varios ejemplos, máximo 5 ejemplos para escenarios de este tipo, más de 5 nos dice que quizás debemos de dividir los escenarios
 
 ## Estructura Gherkin
 ### Given 
+El Given describe la acción previo al escenario. Es el inicio para detonar nuestro flujo 
 ### When
+Lo que detona el escenario . Es decir, que acción me permite validar mi escenario. Es el corazón del escenario y y capta el momento en que el usuario interactura con el sistema. Siempre de manera detallada, no quedarnos con lo que nos dice el escenario, si hablamos de una busqueda, lo correcto sería ingresar un articulo. No solo que el usuario realizará una busqueda. Sino que es lo que va a buscar
 ### Then
+Describe el resultado esperado a partir de la acción anterior. En este caso del Then
 ### And
+
 ### But
